@@ -19,7 +19,7 @@ if not check_ffmpeg():
     print("FFmpegをインストールし、PATHに追加してから再試行してください。")
 else:
     # 音声ファイルの絶対パスを指定
-    audio_file = os.path.join(os.getcwd(), "test_audio.m4a")
+    audio_file = os.path.join(os.getcwd(), "output.wav")
 
     # ファイルの存在を確認
     if os.path.isfile(audio_file):
