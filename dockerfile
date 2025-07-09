@@ -16,7 +16,7 @@ RUN apt-get update && \
 
 # pipアップグレードとパッケージインストール
 RUN pip install --upgrade pip && \
-    pip install git+https://github.com/openai/whisper.git pyaudio
+    pip install git+https://github.com/openai/whisper.git pyaudio resampy sounddevice scipy
 
 # 作業ディレクトリ作成（任意）
 WORKDIR /app
